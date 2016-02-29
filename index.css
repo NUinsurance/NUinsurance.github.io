@@ -1,3 +1,5 @@
+
+/********************** Navbar ***********************/
 .navbar-brand{
 font-family: 'Questrial', sans-serif;
 font-weight: bold;
@@ -54,3 +56,11 @@ text-align: center;
 .open> ul {
     display: inline-flex !important;
 }
+
+/******************	Ask Expert Page ********************/
+#ThankYouNote{
+	display:none;
+	margin-top: 100px;
+	text-align: center;
+}
+
