@@ -1,0 +1,56 @@
+.navbar-brand{
+font-family: 'Questrial', sans-serif;
+font-weight: bold;
+font-size: 52pt;
+height: 125px;
+line-height: 125px;
+border:1px solid #999;
+}
+
+.dropdown{
+font-size: 18pt;
+height: 55px;
+font-family: 'Questrial', sans-serif;
+margin-top: 20px;
+}
+
+.dropdown-toggle{
+height: 55px;
+font-family: 'Questrial', sans-serif;
+}
+
+.navbar-right{
+	font-size: 10px;
+}
+
+.dropdown-menu{
+font-family: 'Questrial', sans-serif;
+font-size: 15pt;
+font-weight: bold;
+}
+
+.ask{
+left: -50%;
+right: auto;
+text-align: center;
+}
+
+.find{
+left: -100%;
+right: auto;
+text-align: center;
+}
+
+.help{
+left: -400%;
+right: auto;
+text-align: center;
+}
+
+.dropdown-menu > li{
+  display: inline-block;
+    float:left;
+ }
+.open> ul {
+    display: inline-flex !important;
+}

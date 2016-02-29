@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NU Insurance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="askExpert.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">NU Insurance</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ask a Healthcare Question <span class="caret"></span></a>
+        <ul class="dropdown-menu ask">
+          <li>
+            <a href="askExpert.html"><img src = expert.png width="200";><br>Ask an Expert</a>
+          </li>
+          <li><a href="#"><img src = community.png width="200";><br>Ask the Community</a></li>
+          <li><a href="#"><img src = search.png width="200";><br>Search for an Answer</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find a Plan <span class="caret"></span></a>
+        <ul class="dropdown-menu find">
+          <li><a href="#"><img src = search.png width="200";><br>Search for a Plan</a></li>
+          <li><a href="#"><img src = personal.png width="200";><br>Choose a Personalized Plan</a></li>
+        </ul>
+      </li>
+      <li class = "dropdown"><a href="#">Your Portal</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span class="caret"></span></a>
+        <ul class="dropdown-menu help">
+          <li><a href="#">Common Terminology</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" id="QuestionForm">
+  <h3>Ask An Expert</h3>
+  <p>Enter your question below along with some key relevant information.</p>
+  <form id="submitForm">
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" id="age" min="0" max="150" placeholder="Eg: 25" required>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" onclick="document.getElementById('age').disabled=this.checked;"> Don't include my age.
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="income">Annual Income ($)</label>
+      <input type="number" class="form-control" id="income" placeholder="Eg: 40,000" required>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" onclick="document.getElementById('income').disabled=this.checked;"> Don't include my income.
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip Code</label>
+      <input type="number" class="form-control" id="zip" placeholder="Eg: 60201" min="10000" max = "99999" required>
+    </div>
+    <div class="form-group">
+      <label for="currentPlan">Do you have a current plan?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadio" id="optionsRadios1" value="option1" onclick="document.getElementById('currentPlan').disabled=!this.checked;" checked>
+          Yes, I would like to share it.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadio" id="optionsRadios2" value="option2" onclick="document.getElementById('currentPlan').disabled=this.checked;">
+          Yes, but I prefer not to share it.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadio" id="optionsRadios3" value="option3" onclick="document.getElementById('currentPlan').disabled=this.checked;">
+          No, I don't.
+        </label>
+      </div>
+      <div>
+        <input type="text" class="form-control" id="currentPlan" placeholder="Provider and Name Your Current Plan (Eg: Aetna Silver Coverage)">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="Question">Please enter your question below.</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="questionType">Please select the type of your question.</label>
+      <select class="form-control" id="typeSelect" required>
+        <option disabled selected> -- select an option -- </option>
+        <option>Specific Plan Question</option>
+        <option>Special Situation Question</option>
+        <option>Plan Selection Question</option>
+        <option>Healthcare Question</option>
+        <option>Others</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submit">Submit Your Question</button>
+  </form>
+</div>
+
+<div class="container" id="ThankYouNote" style="display:none">
+  <h5>Thank you for submitting your question!</h5>
+  <p>An expert will reach out to you shortly.</p>
+</div>
+
+</body>
+</html>

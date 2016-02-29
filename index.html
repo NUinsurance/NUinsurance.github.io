@@ -1,7 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title> NU Insurance </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 <body>
-<h1>NUinsurance</h1>
-<p>This is the home page of NUinsurace.</p>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">NU Insurance</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ask a Healthcare Question <span class="caret"></span></a>
+        <ul class="dropdown-menu ask">
+          <li>
+            <a href="askExpert.html"><img src = expert.png width="200";><br>Ask an Expert</a>
+          </li>
+          <li><a href="#"><img src = community.png width="200";><br>Ask the Community</a></li>
+          <li><a href="#"><img src = search.png width="200";><br>Search for an Answer</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find a Plan <span class="caret"></span></a>
+        <ul class="dropdown-menu find">
+          <li><a href="#"><img src = search.png width="200";><br>Search for a Plan</a></li>
+          <li><a href="#"><img src = personal.png width="200";><br>Choose a Personalized Plan</a></li>
+        </ul>
+      </li>
+      <li class = "dropdown"><a href="#">Your Portal</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span class="caret"></span></a>
+        <ul class="dropdown-menu help">
+          <li><a href="#">Common Terminology</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div>
+
 </body>
 </html>
