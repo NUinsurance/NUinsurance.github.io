@@ -21,6 +21,13 @@
 	    });
 	})(jQuery);
 	</script>
+    <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
 </head>
 <body>
 
@@ -61,10 +68,74 @@
   </div>
 </nav>
 
-<!-- <div class="container" id="homeImage">
+<!--<div class="container" id="homeImage">
   <img src = "insurance.jpg"; width = "50%">
-</div> -->
+</div>-->
   
+<div id="myCarousel" class="carousel" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="askCommunity.html">
+      <img src="community.png" alt="community">
+            <div class="carousel-caption">
+        <h3>Ask the Community</h3>
+        <p>Ask our Community a question!</p>
+      </div>
+    </a>
+    </div>
+
+    <div class="item">
+      <a href="askExpert.html">
+      <img src="expert.png" alt="expert">
+          <div class="carousel-caption">
+        <h3>Ask an Expert</h3>
+        <p>For more complicated questions, <br>we suggest asking one of our experts</p>
+      </div>
+      <a/>
+    </div>
+
+    <div class="item">
+      <a href="search.html">
+      <img src="search.png" alt="search">
+            <div class="carousel-caption">
+        <h3>Search</h3>
+        <p>Think someone else had the same problem <br>you do? Search for past questions!</p>
+      </div>
+    </a>
+    </div>
+
+    <div class="item">
+      <a href="persPan.html">
+      <img src="personal.png" alt="personal">
+            <div class="carousel-caption">
+        <h3>Choose a Personal Plan</h3>
+        <p>Fill out a brief questionnaire in order to <br>recieve a list of plans tailored to your needs</p>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
 <div class="container" id="threeColumns">
   <div class="left-column">
  	<div class="panel panel-info">
@@ -91,7 +162,7 @@
     <a>How should an international student navigate through healthcare plans?</a><hr>
     <a>How can the new policy change in Illinois affect UnitedHealth plan users?</a><hr>
     <div class="more">
-      <a href="askCommunity.html">Browse More Questions</a>
+      <a href="search.html">Browse More Questions</a>
     </div>
 	 	</div>
   	</div>
@@ -110,6 +181,8 @@
   </div>
 </div>
 
+
+<!--
 <div id="my-thumbs-list">
   <ul>
     <li><a href="askExpert.html"><img src="expert.png" /></a></li>
@@ -125,7 +198,7 @@
     <li><a href="askCommunity.html"><img src="community.png" /></a></li>
 </ul>
 </div>
-
+//-->
 
 </body>
 </html>

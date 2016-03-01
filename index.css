@@ -18,7 +18,6 @@ line-height: 92px;
 border:0px solid #999;
 border-radius: 20px;
 color: #1475DE !important;
-background-color:;
 }
 
 .navbar{
@@ -73,7 +72,6 @@ text-align: center;
     display: inline-flex !important;
 }
 
-<<<<<<< Updated upstream
 /******************	Index Page ********************/
 .left-column{ 
 	float: left; 
@@ -116,16 +114,41 @@ text-align: center;
 	text-align: left;
 }
 
+.carousel{
+	width: 100%;
+	margin-right:auto;
+	margin-left: auto;
+	background: #64AADE;
+}
+
+.carousel .item {
+    overflow: hidden;
+    width:50%;
+    margin-right:auto;
+	margin-left: auto;
+}
+
+.carousel-control {
+    border-radius: 10px;
+}
+
+.carousel-control{
+	width:100px;
+}
+
+.carousel-caption{
+	    font-family: "Arial";
+	    font-weight: bold;
+}
+
 =======
  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
    border-radius: 30px;
   }
 
 body {
-    background-color: #4FD4F5;
     font-family: "Trebuchet MS";
     color:#2835A3;
-    font-size: 10pt;
 }
 >>>>>>> Stashed changes
 /******************	Ask Expert Page ********************/
