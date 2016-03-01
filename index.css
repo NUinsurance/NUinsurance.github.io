@@ -142,7 +142,7 @@ text-align: center;
 }
 
 =======
- .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+ .navbar-default .navbar-nav .open .dropdown-menu {
    border-radius: 30px;
   }
 
@@ -150,7 +150,7 @@ body {
     font-family: "Trebuchet MS";
     color:#2835A3;
 }
->>>>>>> Stashed changes
+
 /******************	Ask Expert Page ********************/
 #ThankYouNote{
 	display:none;
