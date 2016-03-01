@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="jquery.mThumbnailScroller.js"></script>
+  <link rel="stylesheet" href="jquery.mThumbnailScroller.css">
+  <script src="scoller.js"></script>
+  <script>
+  	(function($){
+	    $(window).load(function(){
+
+	        $("#my-thumbs-list").mThumbnailScroller({
+	          axis:"x"
+	        });
+	    });
+	})(jQuery);
+	</script>
 </head>
 <body>
 
@@ -47,11 +60,72 @@
     </ul>
   </div>
 </nav>
+
+<!-- <div class="container" id="homeImage">
+  <img src = "insurance.jpg"; width = "50%">
+</div> -->
   
-<div class="container">
-  <h3>Right Aligned Navbar</h3>
-  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+<div class="container" id="threeColumns">
+  <div class="left-column">
+ 	<div class="panel panel-info">
+	 	<div class="panel-heading">Popular Plans</div>
+	 	<div class="panel-body">
+	 	<a>1. Blue Cross Blue Shield Individual</a><hr>
+    <a>2. Aetna Gold Coverage</a><hr>
+    <a>3. Aetna Silver Care Package</a><hr>
+    <a>4. United Health Silver Care Package</a><hr>
+    <a>5. Humana Family Bronze Plan</a><hr>
+    <a>6. PingAn Student Save</a><hr>
+    <div class="more">
+      <a href="searchPlan.html">&nbsp&nbspSearch for More Plans</a>
+    </div>
+	 	</div>
+  	</div>
+  </div>
+  <div class="middle-column">
+ 	<div class="panel panel-info">
+	 	<div class="panel-heading">Popular Questions</div>
+	 	<div class="panel-body">
+    <a>What are the differences between premium and deductible?</a><hr>
+    <a>What are the benifits of choosing a family plan over an individual plan?</a><hr>
+    <a>How should an international student navigate through healthcare plans?</a><hr>
+    <a>How can the new policy change in Illinois affect UnitedHealth plan users?</a><hr>
+    <div class="more">
+      <a href="askCommunity.html">Browse More Questions</a>
+    </div>
+	 	</div>
+  	</div>
+  </div>
+  <div class="right-column">
+ 	<div class="panel panel-info">
+	 	<div class="panel-heading">Healthcare News</div>
+	 	<div class="panel-body">
+    <a>Americans like single-payer healthcare plans</a><hr>
+    <a>Bernie Sander's healthcare plan can actually hurt the poor</a><hr>
+    <a>Super Tuesday may define the coming health care clash</a><hr>
+    <a>Illinois passes new bill to limit use of medicare in certain areas</a><hr>
+    <a>Overnight Healthcare: What would TrumpCare look like?</a>
+	 	</div>
+  	</div>
+  </div>
 </div>
+
+<div id="my-thumbs-list">
+  <ul>
+    <li><a href="askExpert.html"><img src="expert.png" /></a></li>
+    <li><a href="search.html"><img src="search.png" /></a></li>
+    <li><a href="askCommunity.html"><img src="community.png" /></a></li>
+    <li><a href="persPan.html"><img src="personal.png" width="250"/></a></li>
+    <li><a href="askExpert.html"><img src="expert.png" /></a></li>
+	  <li><a href="search.html"><img src="search.png" /></a></li>
+    <li><a href="askCommunity.html"><img src="community.png" /></a></li>
+    <li><a href="persPan.html"><img src="personal.png" width="250"/></a></li>
+    <li><a href="askExpert.html"><img src="expert.png" /></a></li>
+	  <li><a href="search.html"><img src="search.png" /></a></li>
+    <li><a href="askCommunity.html"><img src="community.png" /></a></li>
+</ul>
+</div>
+
 
 </body>
 </html>
