@@ -47,7 +47,7 @@ border-radius: 10px !important;
 }
 
 .ask{
-left: -50%;
+left: auto;
 right: auto;
 text-align: center;
 }
