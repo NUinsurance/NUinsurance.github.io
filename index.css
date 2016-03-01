@@ -1,24 +1,40 @@
 
 /********************** Navbar ***********************/
+@font-face{
+	font-family: "Gentona";
+	src: url("Rene Bieder - Gentona ExtraBold DEMO.otf");
+}
+
+@font-face{
+	font-family: "Campton";
+	src: url("Rene Bieder - Campton Light DEMO.otf");
+}
+
 .navbar-brand{
-font-family: 'Questrial', sans-serif;
-font-weight: bold;
-font-size: 52pt;
-height: 125px;
-line-height: 125px;
-border:1px solid #999;
+font-family: 'Gentona';
+font-size: 57pt;
+height: 105px;
+line-height: 92px;
+border:0px solid #999;
+border-radius: 20px;
+color: #1475DE !important;
+background-color:;
+}
+
+.navbar{
+border-radius: 20px;
 }
 
 .dropdown{
 font-size: 18pt;
-height: 55px;
-font-family: 'Questrial', sans-serif;
-margin-top: 20px;
+height: 60px;
+font-family: 'Campton';
 }
+
 
 .dropdown-toggle{
 height: 55px;
-font-family: 'Questrial', sans-serif;
+border-radius: 10px;
 }
 
 .navbar-right{
@@ -26,9 +42,9 @@ font-family: 'Questrial', sans-serif;
 }
 
 .dropdown-menu{
-font-family: 'Questrial', sans-serif;
 font-size: 15pt;
 font-weight: bold;
+border-radius: 10px !important;
 }
 
 .ask{
@@ -57,6 +73,7 @@ text-align: center;
     display: inline-flex !important;
 }
 
+<<<<<<< Updated upstream
 /******************	Index Page ********************/
 .left-column{ 
 	float: left; 
@@ -99,6 +116,18 @@ text-align: center;
 	text-align: left;
 }
 
+=======
+ .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+   border-radius: 30px;
+  }
+
+body {
+    background-color: #4FD4F5;
+    font-family: "Trebuchet MS";
+    color:#2835A3;
+    font-size: 10pt;
+}
+>>>>>>> Stashed changes
 /******************	Ask Expert Page ********************/
 #ThankYouNote{
 	display:none;
