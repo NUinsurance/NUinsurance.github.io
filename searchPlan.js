@@ -26,8 +26,8 @@ $(document).ready(function() {
         if(document.getElementById("submitForm").checkValidity()){
             $("#QuestionForm").fadeOut();
             $("#searching").fadeIn();
-            $("#searching").delay(3000).fadeOut();
-            $("#planTable").delay(3000).fadeIn();
+            $("#searching").delay(1500).fadeOut();
+            $("#planTable").delay(1500).fadeIn();
         }
         return false;
     });
