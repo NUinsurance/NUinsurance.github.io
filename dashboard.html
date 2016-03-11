@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NU Insurance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css"> 
+  <head>
+    <style type="text/css">
+        a.nounderline {text-decoration: none; }
+    </style>
+</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="askExpert.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">NU Insurance</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ask a Healthcare Question <span class="caret"></span></a>
+        <ul class="dropdown-menu ask">
+          <li>
+            <a href="askExpert.html"><img src = expert.png width="200";><br>Ask an Expert</a>
+          </li>
+          <li><a href="askCommunity.html"><img src = community.png width="200";><br>Ask the Community</a></li>
+          <li><a href="search.html"><img src = search.png width="200";><br>Search for an Answer</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find a Plan <span class="caret"></span></a>
+        <ul class="dropdown-menu find">
+          <li><a href="searchPlan.html"><img src = search.png width="200";><br>Search for a Plan</a></li>
+          <li><a href="persPan.html"><img src = personal.png width="200";><br>Choose a Personalized Plan</a></li>
+        </ul>
+      </li>
+      <li class = "dropdown"><a href="dashboard.html">Your Portal</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span class="caret"></span></a>
+        <ul class="dropdown-menu help">
+          <li><a href="term.html">Common Terminology</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav> 
+   <div class = "container">
+    <a href="dashboard.html"><img src = Portal.png width="200";></a>
+    <p>Your Personalized Space</p>
+  </div>
+<div class="container" id="threeColumns1">
+  <div class="left-column1">
+  <div class="panel panel-info">
+    <div class="panel-heading">Suggested Plans for You</div>
+    <div class="panel-body">
+    <a href="http://www.bcbs.com/shop-for-health-insurance/types-of-healthcare-coverage.html">1. Blue Cross Blue Shield Individual</a><hr>
+    <a href="https://www.aetna.com/individuals-families.html">2. Aetna Gold Coverage</a><hr>
+    <a href="http://www.aetna.com/health-reform-connection/questions-answers/essential-health-benefit.html">3. Aetna Silver Care Package</a><hr>
+    <a href="http://www.uhc.com/individual-and-family/health-insurance-marketplace/how-to-choose-a-health-insurance-plan/insurance-plan-categories/silver-insurance-plans">4. United Health Silver Care Package</a><hr>
+    <a href="https://www.humana.com/individual-and-family/products-and-services/medical-plans/plans-in-nevada/nv-bronze">5. Humana Family Bronze Plan</a><hr>
+    <a href="https://www.studentadvantage.com/discountcard/">6. PingAn Student Save</a><hr>
+    <div class="more">
+      <a href="searchPlan.html">&nbsp&nbspNot Helpful? Find a Plan</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="middle-column1">
+  <div class="panel panel-info">
+    <div class="panel-heading">Your Previous Questions</div>
+    <div class="panel-body">
+    <a data-toggle="collapse" href="#collapse1" class="nounderline" >What are the differences between premium and deductible?</a><hr>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">Premium is the amount of money you have to pay for insurance. Premiums are usually paid in monthly or quarterly installments. Choosing a medical plan that fits your needs and budget is based mostly on balance between deductible, coinsurance, and out-of-pocket limit.</div>
+    </div>
+    <a data-toggle="collapse" href="#collapse2" class="nounderline" >What are the benefits of choosing a family plan over an individual plan?</a><hr>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Individual and family plans offer coverage to unemployed and self-employed people, students, people between jobs, and retirees who aren’t yet eligible for Medicare health insurance benefits.
+Under the Affordable Care Act (ACA), also known as Obamacare, individual and family plans are now sold through private, federal, and state online insurance exchanges. And, as before, they are also sold by brokers and insurance companies.
+ </div>
+    </div>
+    <a data-toggle="collapse" href="#collapse3" class="nounderline" >How should an international student navigate through healthcare plans?</a><hr>
+    <div id="collapse3" class="panel-collapse collapse">
+ <div class="panel-body">International students on an F1 visa do not have any government related health insurance requirements to meet when studying in the USA. With this in mind, and because having adequate health insurance is so important, F1 visa holders and their dependents should follow the insurance guidelines set by their school.
+ </div>
+
+    </div>
+    <a data-toggle="collapse" href="#collapse4" class="nounderline" >How can the new policy change in Illinois affect UnitedHealth plan users?</a><hr>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">No prior authorization will be required if services are performed at a participating network ambulatory surgery center (ASC). While the policy encourages services to be performed in the ASC setting, it does not prohibit performance of procedures in the hospital outpatient setting. Coverage determinations will consider the availability of a participating network facility, specialty requirements, physician privileges and whether a patient has an individual need for access to more intensive services. </div>
+    </div>
+    <div class="more">
+      <a href="searchPlan.html">Browse More Questions</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="right-column1">
+  <div class="panel panel-info">
+    <div class="panel-heading">Other Popular Questions</div>
+    <div class="panel-body">
+    <a class="nounderline" data-toggle="collapse" href="#collapse5">Americans like single-payer healthcare plans</a><hr>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">A single-payer system is one in which health-care providers are paid for their services by the government rather than by private insurers. Every year since 2003, Democrats in Congress have introduced H.R.676, the Expanded & Improved Medicare For All Act. The key provisions are that it would prohibit private health insurers from selling health insurance coverage that duplicates the benefits provided under the legislation and that it would raise taxes, including payroll taxes, to pay for the extended coverage</div>
+    </div>
+    <a class="nounderline" data-toggle="collapse" href="#collapse6">Bernie Sander's healthcare plan can actually hurt the poor</a><hr>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">A new analysis from Kenneth Thorpe, an Emory University health-care expert who worked in the Bill Clinton White House, finds that Mr. Sanders’s proposal would actually harm many working beneficiaries of Medicaid, the state-federal health-care plan for the poor and the near-poor. They already get government-provided care, but they would have to pay more of their wages to the federal government to finance Mr. Sanders’s new single-payer system.</div>
+    </div>
+
+    <a class="nounderline" data-toggle="collapse" href="#collapse7" class="nounderline">Super Tuesday may define the coming health care clash</a><hr>
+     <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">No matter who the GOP nominee is, Republicans will have to carry out their promise for “substantial repeal” of the ACA if they win the White House and keep control of Congress, said Democratic health care strategist Chris Jennings. “Health care industry stakeholders will say, 'We hate that.' But it will be very hard for the Republicans not to do something that creates major disruption.”</div>
+    </div>
+    <a class="nounderline" data-toggle="collapse" href="#collapse8">Illinois passes new bill to limit use of medicare in certain areas</a><hr>
+     <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">A 2001 study by the Government Accountability Office evaluated the quality of responses given by Medicare contractor customer service representatives to provider (physician) questions. The evaluators assembled a list of questions, which they asked during a random sampling of calls to Medicare contractors. The rate of complete, accurate information provided by Medicare customer service representatives was 15%.[94] </div>
+    </div>
+    <a class="nounderline" data-toggle="collapse" href="#collapse9">Overnight Healthcare: What would TrumpCare look like?</a>
+     <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">Selling insurance nationwide may be modestly helpful," James Capretta, a healthcare expert at the conservative American Enterprise Institute, wrote in a blog post. "It does not come close to constituting a plan for fixing health care in the United States.Trump has also come under fire for embracing ObamaCare's mandate that everyone have health insurance at the CNN town hall this month, saying "I like the mandate.</div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
